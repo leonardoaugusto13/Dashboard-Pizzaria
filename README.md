@@ -1,6 +1,3 @@
-Aqui está o README com as funcionalidades listadas como tópicos:  
-
----
 
 # 📊 Dashboard de Acompanhamento - Pizzaria  
 
