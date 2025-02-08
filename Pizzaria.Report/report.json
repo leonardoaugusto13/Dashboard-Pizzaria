@@ -1,0 +1,392 @@
+{
+  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "publicCustomVisuals": [],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Clientes_tabela821894599450089.jpg",
+            "path": "Clientes_tabela821894599450089.jpg",
+            "type": 100
+          },
+          {
+            "name": "VG5796432893071841.png",
+            "path": "VG5796432893071841.png",
+            "type": 100
+          },
+          {
+            "name": "cadastro14405698045405613.png",
+            "path": "cadastro14405698045405613.png",
+            "type": 100
+          },
+          {
+            "name": "capacidade5900423168261115.png",
+            "path": "capacidade5900423168261115.png",
+            "type": 100
+          },
+          {
+            "name": "etiquetas-de-preco46712762504313443.png",
+            "path": "etiquetas-de-preco46712762504313443.png",
+            "type": 100
+          },
+          {
+            "name": "homem12132154455709765.png",
+            "path": "homem12132154455709765.png",
+            "type": 100
+          },
+          {
+            "name": "mulher182380563430786.png",
+            "path": "mulher182380563430786.png",
+            "type": 100
+          },
+          {
+            "name": "pessoas6524630062568635.png",
+            "path": "pessoas6524630062568635.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU06",
+            "path": "BaseThemes/CY24SU06.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Clientes_tabela.jpg'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Clientes_tabela821894599450089.jpg\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
+      "displayName": "Cliente",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1080.00,
+      "name": "56ef44992a98c465a64c",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0791ced4690ece980094\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1745.6727272727271,\"y\":80.5090909090909,\"z\":12000,\"width\":60.87272727272727,\"height\":58.90909090909091,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'leftArrow'\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'Visão Geral'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 58.91,
+          "width": 60.87,
+          "x": 1745.67,
+          "y": 80.51,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"2125c99eec4b55ae8211\",\"layouts\":[{\"id\":0,\"position\":{\"x\":286.6909090909091,\"y\":457.5272727272727,\"z\":11000,\"width\":1519.8545454545454,\"height\":540,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Clientes.Nome\"},{\"queryRef\":\"Clientes.Idade\"},{\"queryRef\":\"Clientes.Sexo\"},{\"queryRef\":\"Medidas.ticket_medio\"},{\"queryRef\":\"Clientes.Endereço\"},{\"queryRef\":\"Medidas.maior_pedidos\"},{\"queryRef\":\"Clientes.Telefone\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Clientes\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Nome\"},\"Name\":\"Clientes.Nome\",\"NativeReferenceName\":\"Nome\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Idade\"},\"Name\":\"Clientes.Idade\",\"NativeReferenceName\":\"Idade\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sexo\"},\"Name\":\"Clientes.Sexo\",\"NativeReferenceName\":\"Sexo\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Telefone\"},\"Name\":\"Clientes.Telefone\",\"NativeReferenceName\":\"Telefone\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Endereço\"},\"Name\":\"Clientes.Endereço\",\"NativeReferenceName\":\"Endereço\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"maior_pedidos\"},\"Name\":\"Medidas.maior_pedidos\",\"NativeReferenceName\":\"Melhor dia\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"ticket_medio\"},\"Name\":\"Medidas.ticket_medio\",\"NativeReferenceName\":\"Ticket Médio\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Endereço\"}}}]},\"columnProperties\":{\"Medidas.maior_pedidos\":{\"displayName\":\"Melhor dia\"},\"Medidas.ticket_medio\":{\"displayName\":\"Ticket Médio\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"values\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}},\"wordWrap\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"columnHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}],\"columnFormatting\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Pizzas.Foto\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Pizzas.sabor\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Medidas.pedidos\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Medidas.percentual_pedidos\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"pedidos.tamanho\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Sum(pedidos.Valor unitário)\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Medidas.Valor_total_vendido\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Medidas.percentual_vendas\"}},{\"properties\":{\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Clientes.Nome\"}},{\"properties\":{\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Clientes.Idade\"}},{\"properties\":{\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Clientes.Sexo\"}},{\"properties\":{\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Medidas.ticket_medio\"}},{\"properties\":{\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Clientes.Endereço\"}},{\"properties\":{\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Medidas.maior_pedidos\"}},{\"properties\":{\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Clientes.Telefone\"}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"191.8634290999566D\"}}}},\"selector\":{\"metadata\":\"Pizzas.sabor\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"118D\"}}}},\"selector\":{\"metadata\":\"Pizzas.Foto\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"112.23636105826608D\"}}}},\"selector\":{\"metadata\":\"Medidas.pedidos\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"111.60000958807244D\"}}}},\"selector\":{\"metadata\":\"Medidas.percentual_pedidos\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"87.8215793354129D\"}}}},\"selector\":{\"metadata\":\"pedidos.tamanho\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"186.74447332871335D\"}}}},\"selector\":{\"metadata\":\"Clientes.Nome\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"95.84503258681606D\"}}}},\"selector\":{\"metadata\":\"Clientes.Idade\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"114.90405287866645D\"}}}},\"selector\":{\"metadata\":\"Clientes.Sexo\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"149.84500902576877D\"}}}},\"selector\":{\"metadata\":\"Medidas.ticket_medio\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"459.40006717361655D\"}}}},\"selector\":{\"metadata\":\"Clientes.Endereço\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"236.75647003598812D\"}}}},\"selector\":{\"metadata\":\"Medidas.maior_pedidos\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"255.74908008798033D\"}}}},\"selector\":{\"metadata\":\"Clientes.Telefone\"}}],\"total\":[{\"properties\":{\"totals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'ContrastAlternatingRows'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 540.00,
+          "width": 1519.85,
+          "x": 286.69,
+          "y": 457.53,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"2f7c38e48ab58532a225\",\"layouts\":[{\"id\":0,\"position\":{\"x\":37.30909090909086,\"y\":329.1054545454542,\"z\":3000,\"width\":208.14545454545453,\"height\":76.58181818181818,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendario.Nome do Mês\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Nome do Mês\"},\"Name\":\"Calendario.Nome do Mês\",\"NativeReferenceName\":\"Nome do Mês\"}]},\"syncGroup\":{\"groupName\":\"Nome do Mês\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Mês'\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 76.58,
+          "width": 208.15,
+          "x": 37.31,
+          "y": 329.11,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"615384508d500738a004\",\"layouts\":[{\"id\":0,\"position\":{\"x\":41.236363636363635,\"y\":897.3818181818181,\"z\":9000,\"width\":200.29090909090908,\"height\":49.090909090909086,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'clearAllSlicers'\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Limpar todas as segmentações'\"}}},\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'ClearAllSlicers'\"}}},\"tooltipPlaceholderText\":{\"expr\":{\"Literal\":{\"Value\":\"'Limpar todas as segmentações de dados nesta página'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 49.09,
+          "width": 200.29,
+          "x": 41.24,
+          "y": 897.38,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"7752ab4d32740e0b0b5e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":37.30909090909086,\"y\":217.96363636363648,\"z\":8000,\"width\":208.14545454545453,\"height\":76.58181818181818,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Campo_fat_pedi.Campo_fat_pedi\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Campo_fat_pedi\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Campo_fat_pedi\"},\"Name\":\"Campo_fat_pedi.Campo_fat_pedi\",\"NativeReferenceName\":\"Campo_fat_pedi\"}]},\"syncGroup\":{\"groupName\":\"Campo_fat_pedi\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Campo_fat_pedi\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Campo_fat_pedi Campos\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'''Medidas''[pedidos]'\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Selecione a medida'\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"cachedFilterDisplayItems\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Campo_fat_pedi\"}},\"Property\":\"Campo_fat_pedi Campos\"}},\"Right\":{\"Literal\":{\"Value\":\"'''Medidas''[pedidos]'\"}}}}},\"displayName\":\"Pedidos\"}]}}",
+          "filters": "[]",
+          "height": 76.58,
+          "width": 208.15,
+          "x": 37.31,
+          "y": 217.96,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"834434b9aa1359de0eca\",\"layouts\":[{\"id\":0,\"position\":{\"x\":37.30909090909086,\"y\":440.2472727272724,\"z\":4000,\"width\":208.14545454545453,\"height\":76.58181818181818,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendario.Nome do Dia\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Nome do Dia\"},\"Name\":\"Calendario.Nome do Dia\",\"NativeReferenceName\":\"Nome do Dia\"}]},\"syncGroup\":{\"groupName\":\"Nome do Dia\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 76.58,
+          "width": 208.15,
+          "x": 37.31,
+          "y": 440.25,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"8914dd35973eb500e80e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":960.2181818181817,\"y\":249.38181818181818,\"z\":2000,\"width\":109.96363636363635,\"height\":78.54545454545453,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"mulher182380563430786.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 78.55,
+          "width": 109.96,
+          "x": 960.22,
+          "y": 249.38,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"931efa612d3ec8278471\",\"layouts\":[{\"id\":0,\"position\":{\"x\":37.30909090909086,\"y\":773.6727272727276,\"z\":7000,\"width\":208.14545454545453,\"height\":76.58181818181818,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"pedidos.tamanho\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"pedidos\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"tamanho\"},\"Name\":\"pedidos.tamanho\",\"NativeReferenceName\":\"Tamanho\"}]},\"columnProperties\":{\"pedidos.tamanho\":{\"displayName\":\"Tamanho\"}},\"syncGroup\":{\"groupName\":\"tamanho\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 76.58,
+          "width": 208.15,
+          "x": 37.31,
+          "y": 773.67,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"9f72f2ba302ee5b0e059\",\"layouts\":[{\"id\":0,\"position\":{\"x\":302.4,\"y\":241.5272727272727,\"z\":1000,\"width\":76.58181818181818,\"height\":98.18181818181817,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"homem12132154455709765.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 98.18,
+          "width": 76.58,
+          "x": 302.40,
+          "y": 241.53,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"a08fdeee4ee0b5878c97\",\"layouts\":[{\"id\":0,\"position\":{\"x\":37.30909090909086,\"y\":551.3890909090909,\"z\":5000,\"width\":208.14545454545453,\"height\":76.58181818181818,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Clientes.Sexo\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Clientes\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sexo\"},\"Name\":\"Clientes.Sexo\",\"NativeReferenceName\":\"Sexo\"}]},\"syncGroup\":{\"groupName\":\"Sexo\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 76.58,
+          "width": 208.15,
+          "x": 37.31,
+          "y": 551.39,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"c5c79bee4b0c2d8e0c67\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1119.2727272727273,\"y\":182.6181818181818,\"z\":10000,\"width\":687.2727272727273,\"height\":212.07272727272726,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendario.Nome do Dia\"},{\"queryRef\":\"Medidas.pedidos\"},{\"queryRef\":\"Medidas.percentual_pedidos\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Nome do Dia\"},\"Name\":\"Calendario.Nome do Dia\",\"NativeReferenceName\":\"Nome do Dia\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"percentual_pedidos\"},\"Name\":\"Medidas.percentual_pedidos\",\"NativeReferenceName\":\"%\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"pedidos\"},\"Name\":\"Medidas.pedidos\",\"NativeReferenceName\":\"Pedidos\"}]},\"queryFieldParametersByRole\":{\"Values\":[{\"index\":1,\"length\":1,\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Campo_fat_pedi\"}},\"Property\":\"Campo_fat_pedi\"}}}]},\"columnProperties\":{\"Medidas.percentual_pedidos\":{\"displayName\":\"%\"},\"Medidas.pedidos\":{\"displayName\":\"Pedidos\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}],\"values\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}],\"columnFormatting\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Pizzas.Foto\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Pizzas.sabor\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Medidas.percentual_pedidos\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"pedidos.tamanho\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Sum(pedidos.Valor unitário)\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Medidas.Valor_total_vendido\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Medidas.percentual_vendas\"}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"191.8634290999566D\"}}}},\"selector\":{\"metadata\":\"Pizzas.sabor\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"118D\"}}}},\"selector\":{\"metadata\":\"Pizzas.Foto\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"200.2853458283461D\"}}}},\"selector\":{\"metadata\":\"Medidas.percentual_pedidos\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"87.8215793354129D\"}}}},\"selector\":{\"metadata\":\"pedidos.tamanho\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"235.86465136252866D\"}}}},\"selector\":{\"metadata\":\"Clientes.Nome\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"95.84503258681606D\"}}}},\"selector\":{\"metadata\":\"Clientes.Idade\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"114.90405287866645D\"}}}},\"selector\":{\"metadata\":\"Clientes.Sexo\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"149.84500902576877D\"}}}},\"selector\":{\"metadata\":\"Medidas.ticket_medio\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"714.6752707060236D\"}}}},\"selector\":{\"metadata\":\"Clientes.Endereço\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"236.75647003598812D\"}}}},\"selector\":{\"metadata\":\"Medidas.maior_pedidos\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"255.74908008798033D\"}}}},\"selector\":{\"metadata\":\"Clientes.Telefone\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"260.2419210500948D\"}}}},\"selector\":{\"metadata\":\"Calendario.Nome do Dia\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"202.5817939003545D\"}}}},\"selector\":{\"metadata\":\"Medidas.Valor_total_vendido\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'ContrastAlternatingRows'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 212.07,
+          "width": 687.27,
+          "x": 1119.27,
+          "y": 182.62,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"de5d240069c44dc8adac\",\"layouts\":[{\"id\":0,\"position\":{\"x\":37.30909090909086,\"y\":662.5309090909094,\"z\":6000,\"width\":208.14545454545453,\"height\":76.58181818181818,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Clientes.Nome\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Clientes\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Nome\"},\"Name\":\"Clientes.Nome\",\"NativeReferenceName\":\"Cliente\"}]},\"columnProperties\":{\"Clientes.Nome\":{\"displayName\":\"Cliente\"}},\"syncGroup\":{\"groupName\":\"Nome\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 76.58,
+          "width": 208.15,
+          "x": 37.31,
+          "y": 662.53,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"e0628597a19760abc7b0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":286.6909090909091,\"y\":184.58181818181816,\"z\":0,\"width\":783.490909090909,\"height\":210.1090909090909,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Medidas.pedidos\"}],\"Series\":[{\"queryRef\":\"Clientes.Sexo\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Clientes\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sexo\"},\"Name\":\"Clientes.Sexo\",\"NativeReferenceName\":\"Sexo\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"pedidos\"},\"Name\":\"Medidas.pedidos\",\"NativeReferenceName\":\"Pedidos\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"pedidos\"}}}]},\"queryFieldParametersByRole\":{\"Y\":[{\"index\":0,\"length\":1,\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Campo_fat_pedi\"}},\"Property\":\"Campo_fat_pedi\"}}}]},\"columnProperties\":{\"Medidas.pedidos\":{\"displayName\":\"Pedidos\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}},\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":6,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Clientes\"}},\"Property\":\"Sexo\"}},\"Right\":{\"Literal\":{\"Value\":\"'Feminino'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Clientes\"}},\"Property\":\"Sexo\"}},\"Right\":{\"Literal\":{\"Value\":\"'Masculino'\"}}}}}]}}]},\"vcObjects\":{\"visualTooltip\":[{\"properties\":{\"section\":{\"expr\":{\"Literal\":{\"Value\":\"'295ea93d8b06b0619ac7'\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 210.11,
+          "width": 783.49,
+          "x": 286.69,
+          "y": 184.58,
+          "z": 0.00
+        }
+      ],
+      "width": 1920.00
+    },
+    {
+      "config": "{\"relationships\":[{\"source\":\"7f31a526c1c55d47c28c\",\"target\":\"1a6ce41f89174c703446\",\"type\":3}],\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'VG.png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"VG5796432893071841.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
+      "displayName": "Visão Geral",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1080.00,
+      "name": "f59ca8ac140bb92ac121",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0cfc89fe7721aec06e99\",\"layouts\":[{\"id\":0,\"position\":{\"x\":677.4545454545454,\"y\":151.2,\"z\":17000,\"width\":74.61818181818181,\"height\":53.018181818181816,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"etiquetas-de-preco46712762504313443.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 53.02,
+          "width": 74.62,
+          "x": 677.45,
+          "y": 151.20,
+          "z": 17000.00
+        },
+        {
+          "config": "{\"name\":\"1a6ce41f89174c703446\",\"layouts\":[{\"id\":0,\"position\":{\"x\":294.5454545454545,\"y\":335.78181818181815,\"z\":0,\"width\":960.2181818181817,\"height\":274.9090909090909,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Medidas.pedidos\"}],\"Category\":[{\"queryRef\":\"Calendario.Nome do Mês\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Nome do Mês\"},\"Name\":\"Calendario.Nome do Mês\",\"NativeReferenceName\":\"Nome do Mês\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"pedidos\"},\"Name\":\"Medidas.pedidos\",\"NativeReferenceName\":\"Pedidos\"}]},\"queryFieldParametersByRole\":{\"Y\":[{\"index\":0,\"length\":1,\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Campo_fat_pedi\"}},\"Property\":\"Campo_fat_pedi\"}}}]},\"columnProperties\":{\"Medidas.pedidos\":{\"displayName\":\"Pedidos\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"lineStyles\":[{\"properties\":{\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"markerColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0}}}}},\"lineChartType\":{\"expr\":{\"Literal\":{\"Value\":\"'step'\"}}},\"markerShape\":{\"expr\":{\"Literal\":{\"Value\":\"'diamond'\"}}},\"markerSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"dataPoint\":[{\"properties\":{\"showAllDataPoints\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Medidas.Valor_total_vendido\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Medidas.pedidos\"}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 274.91,
+          "width": 960.22,
+          "x": 294.55,
+          "y": 335.78,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"2955a300e13aa7c6c573\",\"layouts\":[{\"id\":0,\"position\":{\"x\":691.1999999999999,\"y\":153.16363636363636,\"z\":5000,\"width\":341.67272727272723,\"height\":147.27272727272725,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Valor_total_vendido\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Valor_total_vendido\"},\"Name\":\"Medidas.Valor_total_vendido\",\"NativeReferenceName\":\"Total de Vendas\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Valor_total_vendido\"}}}]},\"columnProperties\":{\"Medidas.Valor_total_vendido\":{\"displayName\":\"Total de Vendas\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 147.27,
+          "width": 341.67,
+          "x": 691.20,
+          "y": 153.16,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"3cd8b5f837ccc422eda6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1083.9272727272726,\"y\":153.16363636363636,\"z\":6000,\"width\":341.67272727272723,\"height\":147.27272727272725,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.ticket_medio\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"ticket_medio\"},\"Name\":\"Medidas.ticket_medio\",\"NativeReferenceName\":\"Ticket Médio\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"ticket_medio\"}}}]},\"columnProperties\":{\"Medidas.ticket_medio\":{\"displayName\":\"Ticket Médio\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 147.27,
+          "width": 341.67,
+          "x": 1083.93,
+          "y": 153.16,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"43e8c486531a454e13b7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":37.30909090909086,\"y\":551.3890909090909,\"z\":11000,\"width\":208.14545454545453,\"height\":76.58181818181818,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Clientes.Sexo\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Clientes\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sexo\"},\"Name\":\"Clientes.Sexo\",\"NativeReferenceName\":\"Sexo\"}]},\"syncGroup\":{\"groupName\":\"Sexo\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 76.58,
+          "width": 208.15,
+          "x": 37.31,
+          "y": 551.39,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"54e63b1fc49513e3e1e3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":294.5454545454545,\"y\":683.3454545454545,\"z\":2000,\"width\":960.2181818181817,\"height\":316.1454545454545,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Pizzas.Foto\"},{\"queryRef\":\"Pizzas.sabor\"},{\"queryRef\":\"Medidas.pedidos\"},{\"queryRef\":\"Medidas.percentual_pedidos\"},{\"queryRef\":\"pedidos.tamanho\"},{\"queryRef\":\"Sum(pedidos.Valor unitário)\"},{\"queryRef\":\"Medidas.Valor_total_vendido\"},{\"queryRef\":\"Medidas.percentual_vendas\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Pizzas\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0},{\"Name\":\"p1\",\"Entity\":\"pedidos\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"sabor\"},\"Name\":\"Pizzas.sabor\",\"NativeReferenceName\":\"Sabor\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"pedidos\"},\"Name\":\"Medidas.pedidos\",\"NativeReferenceName\":\"Pedidos\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"percentual_pedidos\"},\"Name\":\"Medidas.percentual_pedidos\",\"NativeReferenceName\":\"% Pedidos\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Foto\"},\"Name\":\"Pizzas.Foto\",\"NativeReferenceName\":\"Foto\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"tamanho\"},\"Name\":\"pedidos.tamanho\",\"NativeReferenceName\":\"Tamanho\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"Valor unitário\"},\"Name\":\"Sum(pedidos.Valor unitário)\",\"NativeReferenceName\":\"Valor unitário\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Valor_total_vendido\"},\"Name\":\"Medidas.Valor_total_vendido\",\"NativeReferenceName\":\"Total Vendido\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"percentual_vendas\"},\"Name\":\"Medidas.percentual_vendas\",\"NativeReferenceName\":\"% Vendas\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"percentual_vendas\"}}}]},\"columnProperties\":{\"Medidas.percentual_pedidos\":{\"displayName\":\"% Pedidos\"},\"Medidas.pedidos\":{\"displayName\":\"Pedidos\"},\"Pizzas.sabor\":{\"displayName\":\"Sabor\"},\"pedidos.tamanho\":{\"displayName\":\"Tamanho\"},\"Medidas.Valor_total_vendido\":{\"displayName\":\"Total Vendido\"},\"Medidas.percentual_vendas\":{\"displayName\":\"% Vendas\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"191.8634290999566D\"}}}},\"selector\":{\"metadata\":\"Pizzas.sabor\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"118D\"}}}},\"selector\":{\"metadata\":\"Pizzas.Foto\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"112.23636105826608D\"}}}},\"selector\":{\"metadata\":\"Medidas.pedidos\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"111.60000958807244D\"}}}},\"selector\":{\"metadata\":\"Medidas.percentual_pedidos\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"87.8215793354129D\"}}}},\"selector\":{\"metadata\":\"pedidos.tamanho\"}}],\"values\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}],\"columnHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}],\"columnFormatting\":[{\"properties\":{\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Pizzas.Foto\"}},{\"properties\":{\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Pizzas.sabor\"}},{\"properties\":{\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Medidas.pedidos\"}},{\"properties\":{\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Medidas.percentual_pedidos\"}},{\"properties\":{\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"pedidos.tamanho\"}},{\"properties\":{\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Sum(pedidos.Valor unitário)\"}},{\"properties\":{\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Medidas.Valor_total_vendido\"}},{\"properties\":{\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Medidas.percentual_vendas\"}}],\"total\":[{\"properties\":{\"totals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'ContrastAlternatingRows'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 316.15,
+          "width": 960.22,
+          "x": 294.55,
+          "y": 683.35,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"5b3526d0675c04821b92\",\"layouts\":[{\"id\":0,\"position\":{\"x\":37.30909090909086,\"y\":662.5309090909094,\"z\":12000,\"width\":208.14545454545453,\"height\":76.58181818181818,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Clientes.Nome\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Clientes\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Nome\"},\"Name\":\"Clientes.Nome\",\"NativeReferenceName\":\"Cliente\"}]},\"columnProperties\":{\"Clientes.Nome\":{\"displayName\":\"Cliente\"}},\"syncGroup\":{\"groupName\":\"Nome\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 76.58,
+          "width": 208.15,
+          "x": 37.31,
+          "y": 662.53,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"6154e40f5d507655a05e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1496.290909090909,\"y\":153.16363636363636,\"z\":7000,\"width\":341.67272727272723,\"height\":147.27272727272725,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.clientes\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"clientes\"},\"Name\":\"Medidas.clientes\",\"NativeReferenceName\":\"Clientes\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"clientes\"}}}]},\"columnProperties\":{\"Medidas.ticket_medio\":{\"displayName\":\"Ticket Médio\"},\"Medidas.clientes\":{\"displayName\":\"Clientes\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 147.27,
+          "width": 341.67,
+          "x": 1496.29,
+          "y": 153.16,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"6aa58df66436424edced\",\"layouts\":[{\"id\":0,\"position\":{\"x\":37.30909090909086,\"y\":440.2472727272724,\"z\":10000,\"width\":208.14545454545453,\"height\":76.58181818181818,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendario.Nome do Dia\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Nome do Dia\"},\"Name\":\"Calendario.Nome do Dia\",\"NativeReferenceName\":\"Nome do Dia\"}]},\"syncGroup\":{\"groupName\":\"Nome do Dia\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 76.58,
+          "width": 208.15,
+          "x": 37.31,
+          "y": 440.25,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"6d46f0007e30213da746\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1299.9272727272726,\"y\":697.090909090909,\"z\":3000,\"width\":522.3272727272727,\"height\":302.4,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Size\":[{\"queryRef\":\"Medidas.pedidos\"}],\"Category\":[{\"queryRef\":\"Clientes.Endereço\",\"active\":true}],\"Tooltips\":[{\"queryRef\":\"Min(Clientes.Nome)\"},{\"queryRef\":\"Min(Clientes.Sexo)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Clientes\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Endereço\"},\"Name\":\"Clientes.Endereço\",\"NativeReferenceName\":\"Endereço\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Nome\"}},\"Function\":3},\"Name\":\"Min(Clientes.Nome)\",\"NativeReferenceName\":\"Nome\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sexo\"}},\"Function\":3},\"Name\":\"Min(Clientes.Sexo)\",\"NativeReferenceName\":\"Sexo\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"pedidos\"},\"Name\":\"Medidas.pedidos\",\"NativeReferenceName\":\"Pedidos\"}]},\"queryFieldParametersByRole\":{\"Size\":[{\"index\":0,\"length\":1,\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Campo_fat_pedi\"}},\"Property\":\"Campo_fat_pedi\"}}}]},\"columnProperties\":{\"Min(Clientes.Nome)\":{\"displayName\":\"Nome\"},\"Min(Clientes.Sexo)\":{\"displayName\":\"Sexo\"},\"Medidas.pedidos\":{\"displayName\":\"Pedidos\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 302.40,
+          "width": 522.33,
+          "x": 1299.93,
+          "y": 697.09,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"70d861b694e18c83a07e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1280.290909090909,\"y\":359.3454545454545,\"z\":1000,\"width\":541.9636363636363,\"height\":265.09090909090907,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Medidas.pedidos\"}],\"Category\":[{\"queryRef\":\"Calendario.Nome do Dia\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Nome do Dia\"},\"Name\":\"Calendario.Nome do Dia\",\"NativeReferenceName\":\"Nome do Dia\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"pedidos\"},\"Name\":\"Medidas.pedidos\",\"NativeReferenceName\":\"Pedidos\"}]},\"queryFieldParametersByRole\":{\"Y\":[{\"index\":0,\"length\":1,\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Campo_fat_pedi\"}},\"Property\":\"Campo_fat_pedi\"}}}]},\"columnProperties\":{\"Medidas.pedidos\":{\"displayName\":\"Pedidos\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"labelContentLayout\":{\"expr\":{\"Literal\":{\"Value\":\"'MultiLine'\"}}},\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideEnd'\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 265.09,
+          "width": 541.96,
+          "x": 1280.29,
+          "y": 359.35,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"7f31a526c1c55d47c28c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":37.30909090909086,\"y\":329.1054545454542,\"z\":9000,\"width\":208.14545454545453,\"height\":76.58181818181818,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendario.Nome do Mês\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Nome do Mês\"},\"Name\":\"Calendario.Nome do Mês\",\"NativeReferenceName\":\"Nome do Mês\"}]},\"syncGroup\":{\"groupName\":\"Nome do Mês\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Mês'\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 76.58,
+          "width": 208.15,
+          "x": 37.31,
+          "y": 329.11,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"8a135c984c0509310e0c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":294.5454545454545,\"y\":153.16363636363636,\"z\":4000,\"width\":337.7454545454545,\"height\":147.27272727272725,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.pedidos\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"pedidos\"},\"Name\":\"Medidas.pedidos\",\"NativeReferenceName\":\"pedidos\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"pedidos\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 147.27,
+          "width": 337.75,
+          "x": 294.55,
+          "y": 153.16,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"8b58dc102c0a540000a2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":294.5454545454545,\"y\":153.16363636363636,\"z\":18000,\"width\":74.61818181818181,\"height\":53.018181818181816,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"cadastro14405698045405613.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 53.02,
+          "width": 74.62,
+          "x": 294.55,
+          "y": 153.16,
+          "z": 18000.00
+        },
+        {
+          "config": "{\"name\":\"cfd17b5f2ddedbb3c130\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1496.290909090909,\"y\":153.16363636363636,\"z\":15000,\"width\":74.61818181818181,\"height\":53.018181818181816,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"pessoas6524630062568635.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 53.02,
+          "width": 74.62,
+          "x": 1496.29,
+          "y": 153.16,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"cffc80558e21eb2acda4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":37.30909090909086,\"y\":217.96363636363648,\"z\":14000,\"width\":208.14545454545453,\"height\":76.58181818181818,\"tabOrder\":18000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Campo_fat_pedi.Campo_fat_pedi\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Campo_fat_pedi\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Campo_fat_pedi\"},\"Name\":\"Campo_fat_pedi.Campo_fat_pedi\",\"NativeReferenceName\":\"Campo_fat_pedi\"}]},\"syncGroup\":{\"groupName\":\"Campo_fat_pedi\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Campo_fat_pedi\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Campo_fat_pedi Campos\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'''Medidas''[pedidos]'\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Selecione a medida'\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"cachedFilterDisplayItems\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Campo_fat_pedi\"}},\"Property\":\"Campo_fat_pedi Campos\"}},\"Right\":{\"Literal\":{\"Value\":\"'''Medidas''[pedidos]'\"}}}}},\"displayName\":\"Pedidos\"}]}}",
+          "filters": "[]",
+          "height": 76.58,
+          "width": 208.15,
+          "x": 37.31,
+          "y": 217.96,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"d7d03188dd0b184265a2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1083.9272727272726,\"y\":153.16363636363636,\"z\":16000,\"width\":74,\"height\":53,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"capacidade5900423168261115.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 53.00,
+          "width": 74.00,
+          "x": 1083.93,
+          "y": 153.16,
+          "z": 16000.00
+        },
+        {
+          "config": "{\"name\":\"d8bb790957320ca06bc6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":37.30909090909086,\"y\":773.6727272727276,\"z\":13000,\"width\":208.14545454545453,\"height\":76.58181818181818,\"tabOrder\":17000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"pedidos.tamanho\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"pedidos\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"tamanho\"},\"Name\":\"pedidos.tamanho\",\"NativeReferenceName\":\"Tamanho\"}]},\"columnProperties\":{\"pedidos.tamanho\":{\"displayName\":\"Tamanho\"}},\"syncGroup\":{\"groupName\":\"tamanho\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 76.58,
+          "width": 208.15,
+          "x": 37.31,
+          "y": 773.67,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"dfb1fb2ad3997e64602c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":41.236363636363635,\"y\":897.3818181818181,\"z\":19000,\"width\":200.29090909090908,\"height\":49.090909090909086,\"tabOrder\":19000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'clearAllSlicers'\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Limpar todas as segmentações'\"}}},\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'ClearAllSlicers'\"}}},\"tooltipPlaceholderText\":{\"expr\":{\"Literal\":{\"Value\":\"'Limpar todas as segmentações de dados nesta página'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 49.09,
+          "width": 200.29,
+          "x": 41.24,
+          "y": 897.38,
+          "z": 19000.00
+        },
+        {
+          "config": "{\"name\":\"e930bce667ee66328206\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1763.3454545454545,\"y\":74.61818181818181,\"z\":8000,\"width\":74.61818181818181,\"height\":58.90909090909091,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'rightArrow'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'Clientes'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'56ef44992a98c465a64c'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 58.91,
+          "width": 74.62,
+          "x": 1763.35,
+          "y": 74.62,
+          "z": 8000.00
+        }
+      ],
+      "width": 1920.00
+    }
+  ]
+}
