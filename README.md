@@ -47,3 +47,7 @@ Este repositório contém um dashboard interativo desenvolvido no **Power BI** p
 ## 📄 Licença  
 
 Este projeto é de uso livre para fins educacionais e profissionais. Caso utilize ou modifique, lembre-se de dar os devidos créditos.  
+
+## Relatório
+https://app.powerbi.com/view?r=eyJrIjoiMTM2YTQ0YmUtZjJjMy00YzRiLWE1NzQtMTAxYjZmZTExYzRjIiwidCI6IjY2MTlkNDVmLTc2ZjItNDVmNS1hNmI5LTM4Mzg2YzYyNGE4YyJ9
+
